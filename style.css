@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'sans-serif';
+    box-sizing: border-box;
+    
+}
+
+
+/*TARGETING THE CONTAINER */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4a1258);
+    padding: 10px;
+}
+
+
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    align-items: center;
+}
+
+.head-div{
+    display:flex;
+}
+
+/*STYLING THE HEADING OF TODO APP*/
+.head-div h2 {
+    display: flex;
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.head-div img{
+    width: 30px;
+    margin: 0 20px 15px ;
+}
+
+/*TARGETING THE ROW */
+.row{
+    display: flex;
+    justify-content: center;
+    background-color:#edeef0 ;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+/*TARGETING THE INPUT BOX*/
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+
+/*TARGETING THE BUTTON*/
+button{
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    border-radius: 20px 21px;
+    font-size: 14px;
+    background: #7e2d9e;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*STYLING THE LIST ITEMS OF UL*/
+ul li{
+    font-weight: bolder;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 5px;
+    margin:10px 0 0 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/*ADDING AND STYLING THE UNCHECKED IMAGE*/
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image:url("unchecked.png") ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: -40px;
+}
+
+.checked{
+    color: #1a49a7;
+    text-decoration: line-through;
+}
+
+
+/*ADDING AND STYLING THE CHECKED IMAGE*/
+ul li.checked::before{
+background: url("checked.png");
+background-size: cover;
+}
+
+
+
+/*TARGETING THE X-LOGO*/
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #a51616;
+}
+ul li span:hover{
+    background-color: lightgrey;
+    border-radius: 50%;
+}

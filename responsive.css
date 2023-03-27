@@ -1,0 +1,51 @@
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+
+    /* Adjusting the width of the todo app */
+    .todo-app {
+      max-width: 100%;
+      margin: 60px auto 20px;
+      padding: 30px 20px 50px;
+    }
+  
+    /* Adjusting the margin of the heading */
+    .head-div {
+      margin-bottom: 15px;
+    }
+  
+    /* Adjusting the font size of the heading */
+    .head-div h2 {
+      font-size: 1.4rem;
+    }
+  
+    /* Adjusting the width of the input box */
+    input {
+      width: 70%;
+    }
+  
+    /* Adjusting the padding of the button */
+    button {
+      padding: 14px 30px;
+      font-size: 12px;
+    }
+  
+    /* Adjusting the margin of the list items */
+    ul li {
+      margin: 8px 0 0 30px;
+    }
+  
+    /* Adjusting the font size of the list items */
+    ul li {
+      font-size: 15px;
+    }
+  
+    /* Adjusting the size of the check and x logos */
+    ul li span {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+  }
